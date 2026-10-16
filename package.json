@@ -1,0 +1,14 @@
+{
+  "name": "k6-performance-testing",
+  "private": true,
+  "scripts": {
+    "build": "esbuild tests/dashboard.ts --bundle --format=esm --external:k6 --external:k6/* --outdir=dist",
+    "typecheck": "tsc --noEmit",
+    "report": "node report.js"
+  },
+  "devDependencies": {
+    "@types/k6": "latest",
+    "esbuild": "latest",
+    "typescript": "latest"
+  }
+}

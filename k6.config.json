@@ -1,0 +1,6 @@
+{
+  "description": "API performance tests executed with k6",
+  "tests": [
+    "tests/dashboard.ts"
+  ]
+}
